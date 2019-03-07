@@ -22,10 +22,7 @@ button{
     color: inherit;
 }
      /* L I N K s */
-a,
-a:link{
-    color: inherit;
-}
+
 a,
 a:link,
 a:visited,
@@ -178,6 +175,12 @@ input:focus{
     margin-right: 15px;
     color: #666;
 }
+.search-info__link{
+    color: #666;
+}
+.search-info__link:hover {
+    color: #b92b27;
+}
 .header-main__search-form{
     border: 1px solid #c3c3c3;
     display: flex;
@@ -301,6 +304,7 @@ input:focus{
     display: flex;
     align-items: center;
     padding: 18px 0 15px 20px;
+    color: inherit;
 }
 .aside-list__link:hover{
     transform: scale(1.05);
