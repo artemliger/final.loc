@@ -13,21 +13,21 @@
         <div class="header-cap">
             <div class="header-cap__links">
                 <ul class="header-cap__list">
-                    <li>
+                    <li class="header-cap__list-item">
                         <a href="#" class="header-cap__link">
                             <svg class="icon-svg cap_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                                <use xlink:href="img/signin.svg#signin"></use>
                             </svg>Вход
                         </a>
                     </li>
-                    <li>
+                    <li class="header-cap__list-item">
                         <a href="#" class="header-cap__link">
                             <svg class="icon-svg cap_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                                 <use xlink:href="img/heart.svg#heart"></use>
                             </svg>Избранное
                         </a>
                     </li>
-                    <li>
+                    <li class="header-cap__list-item">
                         <a href="#" class="header-cap__link">
                             <svg class="icon-svg cap_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 43.9">
                                 <use xlink:href="img/compare.svg#compare"></use>
@@ -84,7 +84,7 @@
                         <svg class="icon-svg search-info__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64">
                             <use xlink:href="img/phone.svg#phone"></use>
                         </svg>
-                        <a href="tel:8(800)684-55-94">8(800)684-55-94</a>
+                        <a href="tel:+78006845594">8(800)684-55-94</a>
                     </div>
                     <div class="search-info__text">
                         <svg class="icon-svg search-info__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
@@ -103,9 +103,9 @@
                 </form>
             </div>
             <div class="header-basket">
-                <div class="header-basket__price">
-                    7 500 р.
-                </div>
+                <output class="header-basket__price">
+                    7 500 <span class="price-value">р.</span>
+                </output>
                 <div class="header-basket__logo" data-count="2">
                     <svg class="header-basket__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
                         <use xlink:href="img/shopping_cart.svg#cart"></use>
@@ -117,62 +117,145 @@
                     <!--block navigation-->
     <nav class="nav">
         <ul class="nav-list">
-            <li><a href="#" class="nav-list__link">Главная</a></li>
-            <li><a href="#" class="nav-list__link">Каталог</a></li>
-            <li><a href="#" class="nav-list__link">Галерея</a></li>
-            <li><a href="#" class="nav-list__link">Акции</a></li>
-            <li><a href="#" class="nav-list__link">Контакты</a></li>
+            <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Главная</a>
+            </li>
+            <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Каталог</a>
+            </li>
+            <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Галерея</a>
+            </li>
+            <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Акции</a>
+            </li>
+            <li class="nav-list__item">
+                <a href="#" class="nav-list__link">Контакты</a>
+            </li>
         </ul>
     </nav>
-                     <!--block main--><!--
+                 <!--block main-->
     <div class="block-main">
-        <aside class="block-main__aside">
-            <ul class="aside-list">
-                <li>Категории
-                    <ul class="aside-lists">
-                        <li><a href="#" class="aside-lists__link"><img src="#" alt="icon_house">Вечерние</a></li>
-                        <li><a href="#" class="aside-lists__link"><img src="#" alt="icon_hurt">Свадебные</a></li>
-                        <li><a href="#" class="aside-lists__link"><img src="#" alt="icon_people">Бальные</a></li>
-                        <li><a href="#" class="aside-lists__link"><img src="#" alt="icon_calendar">Повседневные</a></li>
-                        <li><a href="#" class="aside-lists__link"><img src="#" alt="icon_cogwheel">Особенные</a></li>
-                        <li><a href="#" class="aside-lists__link"><img src="#" alt="icon_clip">Обыкновенные</a></li>
-                        <li><a href="#" class="aside-lists__link"><img src="#" alt="icon_star">Оригинальные</a></li>
-                        <li><a href="#" class="aside-lists__link"><img src="#" alt="icon_cloud">Космические</a></li>
+        <div class="block-main__aside">
+            <aside class="aside">
+                <h3 class="aside-header">
+                    <svg class="icon-svg menu_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.55 94.83">
+                        <use xlink:href="img/menu.svg#menu"></use>
+                    </svg>Категории</h3>
+                    <ul class="aside-list">
+                        <li class="aside-item">
+                            <a href="#" class="aside-list__link">
+                                <svg class="icon-svg aside_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.79 60.78">
+                                    <use xlink:href="img/i1.svg#beanbag"></use>
+                                </svg>Детям до 3-х лет
+                            </a>
+                        </li>
+                        <li class="aside-item">
+                            <a href="#" class="aside-list__link">
+                                <svg class="icon-svg aside_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 56.15">
+                                    <use xlink:href="img/i2.svg#pika"></use>
+                                </svg>Сшитые из плюша
+                            </a>
+                        </li>
+                        <li class="aside-item">
+                            <a href="#" class="aside-list__link">
+                                <svg class="icon-svg aside_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.05 63.85">
+                                    <use xlink:href="img/i3.svg#fleece"></use>
+                                </svg>Сшитые из флиса
+                            </a>
+                        </li>
+                        <li class="aside-item">
+                            <a href="#" class="aside-list__link">
+                                <svg class="icon-svg aside_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.27 48.4">
+                                    <use xlink:href="img/i4.svg#spoke"></use>
+                                </svg>Связанные крючком
+                            </a>
+                        </li>
+                        <li class="aside-item">
+                            <a href="#" class="aside-list__link">
+                                <svg class="icon-svg aside_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.13 66.86">
+                                    <use xlink:href="img/i5.svg#synthetic"></use>
+                                </svg>Сшитые из искусственного меха
+                            </a>
+                        </li>
+                        <li class="aside-item">
+                            <a href="#" class="aside-list__link">
+                                <svg class="icon-svg aside_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.29 56.43">
+                                    <use xlink:href="img/i6.svg#frog"></use>
+                                </svg>Без наполнителя
+                            </a>
+                        </li>
+                        <li class="aside-item">
+                            <a href="#" class="aside-list__link">
+                                <svg class="icon-svg aside_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                    <use xlink:href="img/i7star.svg#star"></use>
+                                </svg>Оригинальные
+                            </a>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-        </aside>
+            </aside>
+            <div class="aside-ban">
+                <img src="img/image_jpg/14.jpg" alt="cover" class="aside-ban__image">
+                <img src="img/image_jpg/13.jpg" alt="cover" class="aside-ban__image">
+            </div>
+        </div>
         <div class="block-main__block-items">
-                    <!--slide--><!--
-            <div class="slider"></div>
-                    <!----><!--
+                    <!--slide-->
+            <figure class="slider">
+                <img src="img/logoC.svg" class="slider-logo" alt="logo">
+                <figcaption class="slider-info">
+                    <div class="slider-info__slider-header">
+                        Chi - Cha Socks
+                    </div>
+                    <div class="slider-info__slider-title">
+                        НОВАЯ КОЛЛЕКЦИЯ ИГРУШЕК
+                    </div>
+                    <div class="slider-info__slider-text">
+                        Мы рады представить вам новую коллекцию игрушек ручной работы из носков
+                    </div>
+                    <a href="#" class="slider-info__slider-btn">КУПИТЬ СЕЙЧАС</a>
+                </figcaption>
+            </figure>
+
             <div class="article-items">
                 <section class="article-items__section">
-                    <h2 class="section-title section-title_sale">
-                        <img src="#" alt="icon_card" class="section-title__image">Продажа
-                    </h2>
-                    <p class="section-text">
-                        Широкий ассортимент моделей
-                    </p>
+                    <a href="#" class="section-link">
+                        <h2 class="section-title section-title_sale">
+                            <svg class="section-title__icon sale__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 64">
+                                <use xlink:href="img/credit_card.svg#credit"></use>
+                            </svg>Chi-ChaClub
+                        </h2>
+                        <p class="section-text">
+                            Специальное предложение
+                        </p>
+                    </a>
                 </section>
                 <section class="article-items__section">
-                    <h2 class="section-title section-title_discount">
-                        <img src="#" alt="icon_class" class="section-title__image">Скидки
-                    </h2>
-                    <p class="section-text">
-                        Невообразимо низкие цены
-                    </p>
+                    <a href="#" class="section-link">
+                        <h2 class="section-title section-title_discount">
+                            <svg class="section-title__icon discount__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                <use xlink:href="img/thumbs_up_alt.svg#class"></use>
+                            </svg>Скидки
+                        </h2>
+                        <p class="section-text">
+                            Невообразимо низкие цены
+                        </p>
+                    </a>
                 </section>
                 <section class="article-items__section">
-                    <h2 class="section-title section-title_promotion">
-                        <img src="#" alt="icon_card" class="section-title__image">Акции
-                    </h2>
-                    <p class="section-text">
-                        Широкий ассортимент моделей
-                    </p>
+                    <a href="#" class="section-link">
+                        <h2 class="section-title section-title_promotion">
+                            <svg class="section-title__icon promotion__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                <use xlink:href="img/gift.svg#gift"></use>
+                            </svg>Акции
+                        </h2>
+                        <p class="section-text">
+                            Широкий ассортимент игрушек
+                        </p>
+                    </a>
                 </section>
             </div>
-                    <!--main--><!--
+                    <!--main-->
             <main class="block-main__main">
                 <section class="main-section__new-items">
                     <h2 class="main-section__title">
@@ -311,7 +394,7 @@
             </main>
         </div>
     </div>
-    <!--footer--><!--
+                     <!--footer-->
     <footer class="footer">
         <div class="footer-main">
             <section class="footer-main__logo">
@@ -359,7 +442,7 @@
             </section>
         </div>
         <div class="footer-main__copyright">
-            <small class="copyright">&#xA9; Nalabuten.ah 2017</small>
+            <small class="copyright">&#xA9; Chi-Cha Toy's 2019</small>
         </div>
     </footer>
 </body>
