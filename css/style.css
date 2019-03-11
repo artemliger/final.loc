@@ -783,7 +783,7 @@ input:focus{
     .header-cap,
     .search-info__contact,
     .search-form__input,
-    .carusel,
+    .carusel.slick-initialized.slick-slider,
     .nav{
         display: none;
     }
@@ -845,7 +845,5 @@ input:focus{
         display: flex;
         flex-direction: column;
     }
-    .carusel{
-        display: none;!important;
-    }
+
 }
