@@ -5,6 +5,8 @@
     <title>Chi-Cha Toy's</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
 </head>
 <body>
@@ -90,7 +92,7 @@
                         <svg class="icon-svg search-info__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                             <use xlink:href="img/envelope_alt.svg#envelope"></use>
                         </svg>
-                        <a href="mailto:info@nalabuten.ah" class="search-info__link">info@chi-chatoys.me</a>
+                        <a href="mailto:info@chichatoys.me" class="search-info__link">info@chi-chatoys.me</a>
                     </div>
                 </address>
                 <form class="header-main__search-form" method="get">
@@ -104,13 +106,19 @@
             </div>
             <div class="header-basket">
                 <output class="header-basket__price">
-                    7 500 <span class="price-value">р.</span>
+                    7 500
                 </output>
+                <span class="price-value">р.</span>
                 <div class="header-basket__logo" data-count="2">
                     <svg class="header-basket__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
                         <use xlink:href="img/shopping_cart.svg#cart"></use>
                     </svg>
                 </div>
+            </div>
+            <div class="header-menu menu_trigger">
+                <svg class="icon-svg head-menu_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.55 94.83">
+                    <use xlink:href="img/menu.svg#menu"></use>
+                </svg>
             </div>
         </div>
     </header>
@@ -175,7 +183,7 @@
                             <a href="#" class="aside-list__link">
                                 <svg class="icon-svg aside_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.13 66.86">
                                     <use xlink:href="img/i5.svg#synthetic"></use>
-                                </svg>Сшитые из искусственного меха
+                                </svg>Из искусственного меха
                             </a>
                         </li>
                         <li class="aside-item">
@@ -201,21 +209,38 @@
         </div>
         <div class="block-main__block-items">
                     <!--slide-->
-            <figure class="slider">
-                <img src="img/logoC.svg" class="slider-logo" alt="logo">
-                <figcaption class="slider-info">
-                    <div class="slider-info__slider-header">
-                        Chi - Cha Socks
-                    </div>
-                    <div class="slider-info__slider-title">
-                        НОВАЯ КОЛЛЕКЦИЯ ИГРУШЕК
-                    </div>
-                    <div class="slider-info__slider-text">
-                        Мы рады представить вам новую коллекцию игрушек ручной работы из носков
-                    </div>
-                    <a href="#" class="slider-info__slider-btn">КУПИТЬ СЕЙЧАС</a>
-                </figcaption>
-            </figure>
+            <div class="carusel">
+                <figure class="slider">
+                    <img src="img/logoC.svg" class="slider-logo" alt="logo">
+                    <figcaption class="slider-info">
+                        <div class="slider-info__slider-header">
+                            Chi - Cha Socks
+                        </div>
+                        <div class="slider-info__slider-title">
+                            НОВАЯ КОЛЛЕКЦИЯ ИГРУШЕК
+                        </div>
+                        <div class="slider-info__slider-text">
+                            Мы рады представить вам новую коллекцию игрушек ручной работы из носков
+                        </div>
+                        <a href="#" class="slider-info__slider-btn">КУПИТЬ СЕЙЧАС</a>
+                    </figcaption>
+                </figure>
+                <figure class="slider">
+                    <img src="img/logoC.svg" class="slider-logo" alt="logo">
+                    <figcaption class="slider-info">
+                        <div class="slider-info__slider-header">
+                            Chi - Cha The Best!!!
+                        </div>
+                        <div class="slider-info__slider-title">
+                            Лучшее, что ТЫ выбирал
+                        </div>
+                        <div class="slider-info__slider-text">
+                            Игрушки ручной работы из носков
+                        </div>
+                        <a href="#" class="slider-info__slider-btn">КУПИТЬ СЕЙЧАС</a>
+                    </figcaption>
+                </figure>
+            </div>
 
             <div class="article-items">
                 <section class="article-items__section">
@@ -255,6 +280,7 @@
                     </a>
                 </section>
             </div>
+
                     <!--main-->
             <main class="block-main__main">
                 <section class="main-section__new-items">
@@ -263,62 +289,94 @@
                     </h2>
                     <div class="main-article__items">
                         <article class="main-article__new-items">
-                            <span class="new">new</span>
-                            <img src="#" alt="image_shoe" class="new-items__image">
+                            <img src="img/image_jpg/rainbow.jpg"
+                                 srcset="img/image_jpg/rainbow@2x.jpg, img/image_jpg/rainbow@3x.jpg, img/image_jpg/rainbow@4x.jpg" alt="image_toy" class="new-items__image">
                             <h3 class="main-article__title">
-                                Labuten-lady
+                                CHI-CHA RAINBOW
                             </h3>
                             <p class="main-article__text">
-                                35 000 р.
+                                3 500 р.
                             </p>
                             <form class="main-article__form">
-                                <button class="form-btn" value="кнопка">
-                                    <img src="#" alt="icon_basket">в корзину
+                                <button class="form-btn" type="submit" value="кнопка" title="добавить в корзину">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                        <use xlink:href="img/shopping_cart.svg#cart"></use>
+                                    </svg>
+                                    <span class="form-btn__text">в корзину</span>
+                                </button>
+                                <button class="form-btn flash__btn" type="submit" value="кнопка" title="быстрая покупка">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                        <use xlink:href="img/bolt.svg#flash"></use>
+                                    </svg>
                                 </button>
                             </form>
                         </article>
                         <article class="main-article__new-items">
-                            <span class="new">new</span>
-                            <img src="#" alt="image_shoe" class="new-items__image">
+                            <img src="img/image_jpg/stripe.jpg"
+                                 srcset="img/image_jpg/stripe@2x.jpg, img/image_jpg/stripe@3x.jpg, img/image_jpg/stripe@4x.jpg" alt="image_shoe" class="new-items__image">
                             <h3 class="main-article__title">
-                                Labuten-lady
+                                CHI-CHA STRIPE
                             </h3>
                             <p class="main-article__text">
-                                35 000 р.
+                                3 350 р.
                             </p>
                             <form class="main-article__form">
-                                <button class="form-btn" value="кнопка">
-                                    <img src="#" alt="icon_basket">в корзину
+                                <button class="form-btn" type="submit" value="кнопка" title="добавить в корзину">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                        <use xlink:href="img/shopping_cart.svg#cart"></use>
+                                    </svg>
+                                    <span class="form-btn__text">в корзину</span>
+                                </button>
+                                <button class="form-btn flash__btn" type="submit" value="кнопка" title="быстрая покупка">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                        <use xlink:href="img/bolt.svg#flash"></use>
+                                    </svg>
                                 </button>
                             </form>
                         </article>
                         <article class="main-article__new-items">
-                            <span class="new">new</span>
-                            <img src="#" alt="image_shoe" class="new-items__image">
+                            <img src="img/image_jpg/chernysh.jpg"
+                                 srcset="img/image_jpg/chernysh@2x.jpg, img/image_jpg/chernysh@3x.jpg, img/image_jpg/chernysh@4x.jpg" alt="image_toy" class="new-items__image">
                             <h3 class="main-article__title">
-                                Labuten-lady
+                                CHI-CHA CHERNYSH
                             </h3>
                             <p class="main-article__text">
-                                35 000 р.
+                                3 400 р.
                             </p>
                             <form class="main-article__form">
-                                <button class="form-btn" value="кнопка">
-                                    <img src="#" alt="icon_basket">в корзину
+                                <button class="form-btn" type="submit" value="кнопка" title="добавить в корзину">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                        <use xlink:href="img/shopping_cart.svg#cart"></use>
+                                    </svg>
+                                    <span class="form-btn__text">в корзину</span>
+                                </button>
+                                <button class="form-btn flash__btn" type="submit" value="кнопка" title="быстрая покупка">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                        <use xlink:href="img/bolt.svg#flash"></use>
+                                    </svg>
                                 </button>
                             </form>
                         </article>
                         <article class="main-article__new-items">
-                            <span class="new">new</span>
-                            <img src="#" alt="image_shoe" class="new-items__image">
+                            <img src="img/image_jpg/peas.jpg"
+                                 srcset="img/image_jpg/peas@2x.jpg, img/image_jpg/peas@3x.jpg, img/image_jpg/peas@4x.jpg" alt="image_toy" class="new-items__image">
                             <h3 class="main-article__title">
-                                Labuten-lady
+                                CHI-CHA PEAS
                             </h3>
                             <p class="main-article__text">
-                                35 000 р.
+                                3 450 р.
                             </p>
                             <form class="main-article__form">
-                                <button class="form-btn" value="кнопка">
-                                    <img src="#" alt="icon_basket">в корзину
+                                <button class="form-btn" type="submit" value="кнопка" title="добавить в корзину">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                        <use xlink:href="img/shopping_cart.svg#cart"></use>
+                                    </svg>
+                                    <span class="form-btn__text">в корзину</span>
+                                </button>
+                                <button class="form-btn flash__btn" type="submit" value="кнопка" title="быстрая покупка">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                        <use xlink:href="img/bolt.svg#flash"></use>
+                                    </svg>
                                 </button>
                             </form>
                         </article>
@@ -330,62 +388,94 @@
                     </h2>
                     <div class="main-article__items">
                         <article class="main-article__discount-items">
-                            <span class="discount">-10%</span>
-                            <img src="#" alt="image_shoe" class="discount-items__image">
+                            <img src="img/image_jpg/berry.jpg"
+                                 srcset="img/image_jpg/berry@2x.jpg, img/image_jpg/berry@3x.jpg, img/image_jpg/berry@4x.jpg" alt="image_toy" class="discount-items__image">
                             <h3 class="main-article__title">
-                                Labuten-lady
+                                CHI-CHA BERRY
                             </h3>
                             <p class="main-article__text">
-                                35 000 р.<sup><small><s>42 700 р.</s></small></sup>
+                                3 150 р.<sup><small><s>3 500 р.</s></small></sup>
                             </p>
                             <form class="main-article__form">
-                                <button class="form-btn" value="кнопка">
-                                    <img src="#" alt="icon_basket">в корзину
+                                <button class="form-btn discount__btn"  type="submit" value="кнопка" title="добавить в корзину">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                        <use xlink:href="img/shopping_cart.svg#cart"></use>
+                                    </svg>
+                                    <span class="form-btn__text">в корзину</span>
+                                </button>
+                                <button class="form-btn flash__btn" type="submit" value="кнопка" title="быстрая покупка">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                        <use xlink:href="img/bolt.svg#flash"></use>
+                                    </svg>
                                 </button>
                             </form>
                         </article>
                         <article class="main-article__discount-items">
-                            <span class="discount">-10%</span>
-                            <img src="#" alt="image_shoe" class="discount-items__image">
+                            <img src="img/image_jpg/leo.jpg"
+                                 srcset="img/image_jpg/leo@2x.jpg, img/image_jpg/leo@3x.jpg, img/image_jpg/leo@4x.jpg" alt="image_toy" class="discount-items__image">
                             <h3 class="main-article__title">
-                                Labuten-lady
+                                CHI-CHA LEO
                             </h3>
                             <p class="main-article__text">
-                                35 000 р.<sup><small><s>42 700 р.</s></small></sup>
+                                2 680 р.<sup><small><s>3 000 р.</s></small></sup>
                             </p>
                             <form class="main-article__form">
-                                <button class="form-btn" value="кнопка">
-                                    <img src="#" alt="icon_basket">в корзину
+                                <button class="form-btn discount__btn" type="submit" value="кнопка" title="добавить в корзину">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                        <use xlink:href="img/shopping_cart.svg#cart"></use>
+                                    </svg>
+                                    <span class="form-btn__text">в корзину</span>
+                                </button>
+                                <button class="form-btn flash__btn" type="submit" value="кнопка" title="быстрая покупка">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                        <use xlink:href="img/bolt.svg#flash"></use>
+                                    </svg>
                                 </button>
                             </form>
                         </article>
                         <article class="main-article__discount-items">
-                            <span class="discount">-10%</span>
-                            <img src="#" alt="image_shoe" class="discount-items__image">
+                            <img src="img/image_jpg/hippo.jpg"
+                                 srcset="img/image_jpg/hippo@2x.jpg, img/image_jpg/hippo@3x.jpg, img/image_jpg/hippo@4x.jpg" alt="image_toy" class="discount-items__image">
                             <h3 class="main-article__title">
-                                Labuten-lady
+                                CHI-CHA HIPPO
                             </h3>
                             <p class="main-article__text">
-                                35 000 р.<sup><small><s>42 700 р.</s></small></sup>
+                                2 880 р.<sup><small><s>3 200 р.</s></small></sup>
                             </p>
                             <form class="main-article__form">
-                                <button class="form-btn" value="кнопка">
-                                    <img src="#" alt="icon_basket">в корзину
+                                <button class="form-btn discount__btn" type="submit" value="кнопка" title="добавить в корзину">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                        <use xlink:href="img/shopping_cart.svg#cart"></use>
+                                    </svg>
+                                    <span class="form-btn__text">в корзину</span>
+                                </button>
+                                <button class="form-btn flash__btn" type="submit" value="кнопка" title="быстрая покупка">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                        <use xlink:href="img/bolt.svg#flash"></use>
+                                    </svg>
                                 </button>
                             </form>
                         </article>
                         <article class="main-article__discount-items">
-                            <span class="discount">-10%</span>
-                            <img src="#" alt="image_shoe" class="discount-items__image">
+                            <img src="img/image_jpg/banana.jpg"
+                                 srcset="img/image_jpg/banana@2x.jpg, img/image_jpg/banana@3x.jpg, img/image_jpg/banana@4x.jpg" alt="image_toy" class="discount-items__image">
                             <h3 class="main-article__title">
-                                Labuten-lady
+                                CHI-CHA BANANA
                             </h3>
                             <p class="main-article__text">
-                                35 000 р.<sup><small><s>42 700 р.</s></small></sup>
+                                2 680 р.<sup><small><s>3 000 р.</s></small></sup>
                             </p>
                             <form class="main-article__form">
-                                <button class="form-btn" value="кнопка">
-                                    <img src="#" alt="icon_basket">в корзину
+                                <button class="form-btn discount__btn" type="submit" value="кнопка" title="добавить в корзину">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                                        <use xlink:href="img/shopping_cart.svg#cart"></use>
+                                    </svg>
+                                    <span class="form-btn__text">в корзину</span>
+                                </button>
+                                <button class="form-btn flash__btn" type="submit" value="кнопка" title="быстрая покупка">
+                                    <svg class="form-btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 64">
+                                        <use xlink:href="img/bolt.svg#flash"></use>
+                                    </svg>
                                 </button>
                             </form>
                         </article>
@@ -397,53 +487,78 @@
                      <!--footer-->
     <footer class="footer">
         <div class="footer-main">
-            <section class="footer-main__logo">
-                <img src="#" alt="foot_logo" class="footer-main__image">
-                <h3 class="footer-main__title">
-                    NALABUTEN.AH
-                </h3>
-                <p class="footer-main__text">
-                    unrealizable dreams
-                </p>
-            </section>
-            <section class="footer-main__menu">
-                <h3 class="menu-title">
+            <figure class="footer-main__logo">
+                <svg class="footer-main__image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 173">
+                    <use xlink:href="img/logo1.svg#logo"></use>
+                </svg>
+                <figcaption class="footer-main__title">
+                    <div class="footer-title">
+                        CHI-CHA TOY'S
+                    </div>
+                    <div class="footer-main__text">
+                        handmade toys
+                    </div>
+                </figcaption>
+            </figure>
+            <div class="footer-main__menu">
+                <div class="menu-title">
                     Меню
-                </h3>
-                <ul class="footer-main__lists">
-                    <li><a href="#" class="footer-main__list">Главная</a></li>
-                    <li><a href="#" class="footer-main__list">Каталог</a></li>
-                    <li><a href="#" class="footer-main__list">Галерея</a></li>
-                    <li><a href="#" class="footer-main__list">Акции</a></li>
-                    <li><a href="#" class="footer-main__list">Контакты</a></li>
+                </div>
+                <ul class="footer-main__list">
+                    <li class="footer-main__items">
+                        <a href="#" class="footer-main__link">Главная</a>
+                    </li>
+                    <li class="footer-main__items">
+                        <a href="#" class="footer-main__link">Каталог</a>
+                    </li>
+                    <li class="footer-main__items">
+                        <a href="#" class="footer-main__link">Галерея</a>
+                    </li>
+                    <li class="footer-main__items">
+                        <a href="#" class="footer-main__link">Акции</a>
+                    </li>
+                    <li class="footer-main__items">
+                        <a href="#" class="footer-main__link">Контакты</a>
+                    </li>
                 </ul>
-            </section>
-            <section class="footer-main__payment">
-                <h3 class="payment-title">
+            </div>
+            <div class="footer-main__payment">
+                <div class="menu-title">
                     Способы оплаты
-                </h3>
-                <ul class="footer-main__lists">
-                    <li>Наличными</li>
-                    <li>Visa или Mastercard</li>
-                    <li>В кредит</li>
+                </div>
+                <ul class="footer-main__list">
+                    <li class="footer-main__items">
+                        <a href="#" class="footer-main__link">Наличными</a>
+                    </li>
+                    <li class="footer-main__items">
+                        <a href="#" class="footer-main__link">Visa или Mastercard</a>
+                    </li>
+                    <li class="footer-main__items">
+                        <a href="#" class="footer-main__link">В кредит</a>
+                    </li>
                 </ul>
-            </section>
-            <section class="footer-main__info">
-                <h3 class="info-title">
+            </div>
+            <div class="footer-main__info">
+                <div class="menu-title">
                     Контактная информация
-                </h3>
+                </div>
                 <address>
-                    <ul class="footer-main__lists">
-                        <li>Телефон: 8(499)654-98-79</li>
-                        <li>E-mail: info@nalabuten.ah</li>
-                        <li>Адрес: г.Москва, Фантастический проезд д.234</li>
+                    <ul class="footer-main__list">
+                        <li class="footer-main__items">Телефон:
+                            <a href="tel:+78006845594" class="footer__link">8(800)800-88-88</a>
+                        </li>
+                        <li class="footer-main__items">E-mail:
+                            <a href="mailto:info@chichatoys.me" class="footer__link">info@chichatoys.me</a>
+                        </li>
+                        <li class="footer-main__items">Адрес: г.Санкт-Петербург, Фантастический проезд д.234</li>
                     </ul>
                 </address>
-            </section>
+            </div>
         </div>
-        <div class="footer-main__copyright">
-            <small class="copyright">&#xA9; Chi-Cha Toy's 2019</small>
-        </div>
+        <small class="copyright">&#xA9; Chi-Cha Toy's 2019</small>
     </footer>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
